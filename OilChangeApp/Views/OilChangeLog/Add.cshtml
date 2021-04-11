@@ -1,0 +1,58 @@
+﻿@model OilChange
+<h1> Oil Change Log</h1>
+
+@*<ul>
+        <li>Id: @Model.id </li>
+        <li>Last Oil Change: @Model.LastOilChange</li>
+        <li>Next Oil Change: @Model.NextOilChange</li>
+        <li>Last Mileage: @Model.LastMilesge</li>
+        <li>Next Change: @Model.NextMileage</li>
+        <li>userid: @Model.userid</li>
+    </ul>*@
+<fieldset class="align-top border custom-control-inline mb-4 p-2 shadow">
+    <legend> Add Oil Change Log</legend>
+    <table>
+        <!--
+        <tr>
+            <th class="pr -1 text right"> Id:</th>
+            <td> @Model.id</td>
+        </tr>
+            -->
+
+        <tr>
+            <th class="text right">Last Oil Change:</th>
+            <td><input asp-for=" LastOilChange " placeholder="Last Oil chnage" type="date" /></td>
+        </tr>
+
+        <tr>
+            <th class="text right">Next Oil Change:</th>
+            <td><input asp-for=" NextOilChange" type="date" /></td>
+        </tr>
+
+        <tr>
+            <th class="text right">Last Mileage:</th>
+            <td> <input asp-for="LastMileage" /></td>
+        </tr>
+
+        <tr>
+            <th class="text right">Next Mileage</th>
+            <td><input asp-for=" NextMileage " /></td>
+        </tr>
+        <!--
+        <tr>
+            <th class="text right">userid:</th>
+            <td>@Model.userid</td>
+        </tr>
+            -->
+        <tr> <td colspan="2"><hr /> </td></tr>
+        <tr>
+            <td class="text- text-center" colspan="2">
+                <button class=" btn-sm btn-success ml-1 mr-1"> Save </button>
+                <button class=" btn-sm btn-secondary ml-1 mr-1"> Cancel</button>
+
+
+            </td>
+
+        </tr>
+    </table>
+</fieldset>

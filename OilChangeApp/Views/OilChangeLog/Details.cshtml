@@ -1,0 +1,67 @@
+﻿@model OilChange
+
+
+@*<ul>
+        <li>Id: @Model.id </li>
+        <li>Last Oil Change: @Model.LastOilChange</li>
+        <li>Next Oil Change: @Model.NextOilChange</li>
+        <li>Last Mileage: @Model.LastMilesge</li>
+        <li>Next Change: @Model.NextMileage</li>
+        <li>userid: @Model.userid</li>
+    </ul>*@
+<fieldset class="align-top border custom-control-inline mb-lg-4 p-lg-2 shadow">
+    <legend> <h1> Oil Change Log</h1></legend>
+    <table>
+        <!--
+        <tr>
+            <th class="text right"> Id:</th>
+            <td> @Model.id</td>
+        </tr>
+            -->
+
+        <tr>
+            <th class="text right">Last Oil Change:</th>
+            <td>@Model.LastOilChange</td>
+        </tr>
+
+        <tr>
+            <th class="text right">Next Oil Change:</th>
+            <td>@Model.NextOilChange</td>
+        </tr>
+
+        <tr>
+            <th class="text right">Last Mileage:</th>
+            <td> @Model.LastMileage</td>
+        </tr>
+
+        <tr>
+            <th class="text right">Next Mileage</th>
+            <td>@Model.NextMileage</td>
+        </tr>
+
+        <!--
+        <tr>
+            <th class="text right">userid:</th>
+            <td>@Model.userid</td>
+        </tr>
+            -->
+        <tr> <td colspan="2"><hr /></td></tr>
+        <tr>
+            <td class="text- text-center" colspan="2">
+                <button class=" btn-sm btn-info ml-1 mr-1"> Back</button>
+
+                <button class="btn-sm btn-warning ml-1 mr-1">
+                    <a asp-controller="OilChangeLog" asp-action="Edit">
+                        Edit
+                    </a>
+                </button>
+
+
+                <button class=" btn-sm btn-danger mr-1"> Delete </button>
+
+            </td>
+
+        </tr>
+
+    </table>
+</fieldset>

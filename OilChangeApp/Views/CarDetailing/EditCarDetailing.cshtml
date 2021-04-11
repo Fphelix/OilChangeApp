@@ -1,0 +1,34 @@
+﻿@model CarDetailing
+
+<h1> Edit Car Detailing</h1>
+
+<div asp-validation-summary ="All"></div>
+
+<form method="post">
+    Id:
+    <input asp-for="Id" />
+    <br />
+
+    LastService:
+    <input asp-for="LastService" type="date" />
+    <br />
+
+    Provider's Name:
+    <input asp-for="ProvidersName">
+    <br />
+
+    Company's name:
+    <input asp-for="CoompanyName" />
+    <br />
+
+    Contacts:
+    <input asp-for="ContactInfo" />
+    <br />
+
+    Vehicle ID:
+    <input asp-for="VehicleID" />
+    <br />
+    <input type="submit" value="Update CarDetailing" />
+
+
+</form>

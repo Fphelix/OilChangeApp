@@ -1,0 +1,18 @@
+﻿@model CarDetailing
+
+<h1>CarDetailing Details</h1>
+
+Id: @Model.Id
+    <br/>
+
+Last Service Date: @Model.LastService?.ToString("MM-dd-yyyy")
+ <br/>
+Company name: @Model.CoompanyName
+<br/>
+Contact Info: @Model.ContactInfo
+<br/>
+Provider's name: @Model.ProvidersName
+<br/>
+Vehicle ID: @Model.VehicleID
+<br/>
+<a asp-action= "EditCarDetailing" asp-route-id ="10" class="btn btn-warning"> Edit</a>
